@@ -1,7 +1,6 @@
 // Стили для хедера
   .header {
     position: absolute;
-    padding: 0 20px;
     height: 502px;
     background-color:var(--hero-background-color);
     width: 100%;
@@ -11,13 +10,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 6px;
+    padding-top: 8px;
+    @media screen and( min-width: 768px) and(max-width:1199px) {
+     padding-top: 32px; 
+    }
   }
   .nav__burger-button {
-    border: none;
-    outline: none;
     background-color: transparent;
-    z-index: 10;
+    z-index: 1;
+    border: none;
+    @media screen and( min-width: 768px) and(max-width:1199px) {
+      margin-right: 32px; 
+      margin-left: auto;
+     }
   }
   .order-button {
     display: block;
@@ -26,15 +31,25 @@
     height: 44px;
     background:var( --primary-white-color);
     border-radius: 22px;
+    border-color: transparent;
     padding: 0 48px;
     color: var(--primary-title-color);
-  }
+    @media screen and( min-width: 768px) and(max-width:1199px) {
+
+    }}
+    .order-button--tablet{
+     @media screen and (max-width: 767px) {
+      display: none;
+      
+     }
+      margin: 0;
+    }
   
   .nav__link {
     display: flex;
     width: 100%;
     border-bottom: 1px solid #e18298;
-    border-top: 1px solid #e18298;
+    
     height: 42px;
     align-items: center;
     padding-left: 20px;
@@ -44,14 +59,15 @@
     display: flex;
     align-items: center;
     color:var( --primary-white-color);
+    &:first-child{
+      border-top: 1px solid #e18298;
+    }
   }
-  .nav__link:active{
-      color: var(--primary-title-color);
-  }
+  
   .mobal-menu {
     position: fixed;
     top: 0;
-    left: 0;
+    // left: 0;
     right: 0;
     bottom: 0;
   
