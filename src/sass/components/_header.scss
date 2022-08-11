@@ -1,19 +1,9 @@
 // Стили для хедера
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
   .header {
     position: absolute;
     padding: 0 20px;
     height: 502px;
-    background-color: #ffb8ca;
+    background-color:var(--hero-background-color);
     width: 100%;
   }
   
@@ -34,10 +24,10 @@ ul {
     margin: 60px auto 20px auto;
     width: 209px;
     height: 44px;
-    background: #ffffff;
+    background:var( --primary-white-color);
     border-radius: 22px;
     padding: 0 48px;
-    color: #d41443;
+    color: var(--primary-title-color);
   }
   
   .nav__link {
@@ -53,10 +43,10 @@ ul {
     line-height: 18px;
     display: flex;
     align-items: center;
-    color: #ffffff;
+    color:var( --primary-white-color);
   }
   .nav__link:active{
-      color: #D41443;
+      color: var(--primary-title-color);
   }
   .mobal-menu {
     position: fixed;
