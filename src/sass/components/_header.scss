@@ -12,9 +12,12 @@
     align-items: center;
     padding-top: 8px;
     @media screen and( min-width: 768px) and(max-width:1199px) {
-     padding-top: 32px; 
+     margin-top: 32px; }
+     @media screen and (min-width: 1200px) {
+      margin-top: 37px;
+     }
     }
-  }
+  
   .nav__burger-button {
     background-color: transparent;
     z-index: 1;
@@ -22,6 +25,9 @@
     @media screen and( min-width: 768px) and(max-width:1199px) {
       margin-right: 32px; 
       margin-left: auto;
+     }
+     @media screen and (min-width:1200px) {
+      display: none;
      }
   }
   .order-button {
@@ -46,25 +52,35 @@
     }
   .nav__list{
     margin-top: 135px;
+    @media screen and (min-width:1200px) {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      
+    }
   }
   .nav__link {
     display: flex;
     width: 100%;
-    border-bottom: 1px solid #e18298;
     
-    height: 42px;
     align-items: center;
-    padding-left: 20px;
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
     display: flex;
     align-items: center;
     color:var( --primary-white-color);
-    &:first-child{
-      border-top: 1px solid #e18298;
+    @media screen and (max-width:1199px) {
+      border-bottom: 1px solid #e18298;
+      padding-left: 20px;
+      height: 42px;
+      &:first-child{
+        border-top: 1px solid #e18298;
+      }
     }
-  }
+    }
+    
   
   .mobal-menu {
     position: fixed;
@@ -81,6 +97,10 @@
     & .order-button{
       position: relative;
       top: 20px;
+    }
+    @media screen and (min-width:1200px) {
+      position: static;
+      width: auto;
     }
   }
   .mobal-menu.is-open {
