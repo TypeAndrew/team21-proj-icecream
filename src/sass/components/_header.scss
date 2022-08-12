@@ -1,30 +1,21 @@
 // Стили для хедера
-<<<<<<< Updated upstream
-.header {
-  position: absolute;
-  height: 502px;
-  background-color: var(--hero-background-color);
-  width: 100%;
-}
-=======
   .header {
     position: relative;
     height: 502px;
     background-color:var(--hero-background-color);
     width: 100%;
     z-index: -3;
->>>>>>> Stashed changes
-
+  }
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 8px;
   @media screen and( min-width: 768px) and(max-width:1199px) {
-    margin-top: 32px;
+    padding-top: 32px;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 37px;
+    padding-top: 37px;
   }
 }
 
