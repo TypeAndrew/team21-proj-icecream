@@ -61,11 +61,12 @@
   }
 }
 .nav__link {
+  &:hover, :focus {
+    color: var( --primary-title-color);
+  }
   display: flex;
   width: 100%;
-
   align-items: center;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1, 28;
