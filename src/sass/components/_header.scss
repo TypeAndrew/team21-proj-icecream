@@ -62,7 +62,9 @@
       top: 80px;
       width: 143px;
       height: 336px;
+      object-fit: contain;
       background-size: contain;
+      
     }
 
     @media (min-width:1200px) {
@@ -71,6 +73,32 @@
       left: 636px;
       top: 108px;
       background-size: contain;
+      
+    }
+
+        @media (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+      
+          @media (max-width:767px) {
+            background: url('../images/hero.scss/ice-cream2x.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            top: 100px;
+          }
+
+          @media (min-width:768px) {
+            background: url('../images/hero.scss/ice-cream2x.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            
+          }
+
+          @media (min-width:1200px) {
+            background: url('../images/hero.scss/ice-cream2x.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            
+          }
     }
 
   
