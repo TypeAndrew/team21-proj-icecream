@@ -1,11 +1,11 @@
 // Стили для хедера
-  .header {
-    position: relative;
-    height: 502px;
-    background-color:var(--hero-background-color);
-    width: 100%;
-    z-index: -3;
-  }
+.header {
+  position: relative;
+  height: 502px;
+  background-color:var(--hero-background-color);
+  width: 100%;
+  z-index: 1;
+}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -61,12 +61,11 @@
   }
 }
 .nav__link {
-  &:hover, :focus {
-    color: var( --primary-title-color);
-  }
   display: flex;
   width: 100%;
+
   align-items: center;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1, 28;
@@ -89,6 +88,9 @@
     &:not(:first-child) {
       margin-left: 15px;
     }
+  }
+  &:hover, :focus {
+    color: var( --primary-title-color);
   }
 }
 
