@@ -9,8 +9,9 @@
                 letter-spacing: 0.04em;
                 text-transform: uppercase;
                 color: var(--primary-white-color);
-    } 
-         @media(min-width:768px) {
+            } 
+
+        @media(min-width:768px) {
                 margin-top: 20px;
                 font-family: 'Titan One';
                 font-style: normal;
@@ -20,9 +21,9 @@
                 letter-spacing: 0.04em;
                 text-transform: uppercase;
                 color: var(--primary-white-color);
-          }
+            }
 
-          @media (min-width:1200px) {
+        @media (min-width:1200px) {
                 margin-top: 75px;
                 margin-left: 0;
                 font-family: 'Titan One';
@@ -33,7 +34,7 @@
                 letter-spacing: 0.04em;
                 text-transform: uppercase;
                 color: var(--primary-white-color);
-          }
+            }
 }
 
 .girl{
@@ -95,9 +96,9 @@
             font-size: 8px;
             line-height: 1.5;
             color: var(--primary-white-color);
-    }
+        }
 
-     @media (min-width:1200px) {
+    @media (min-width:1200px) {
             font-weight: 400;
             font-size: 14px;
             line-height: 140%;
@@ -105,128 +106,127 @@
             height: auto;
             left: 230px;
             margin-bottom: 20px;
-     }
+        }
+
+                &::after {
+        
+                    @media (min-width:768px) {
+                        position: absolute;
+                        background: url('../images/hero.scss/girl1x.png');
+                        content: "";
+                        width: 190px;
+                        height: 150px;
+                        top: -19px;
+                        left: 370px;
+                        z-index: -1;
+                        background-repeat: no-repeat;
+                    }
+        
+                    @media (min-width:1200px) {
+                        position: absolute;
+                        background: url('../images/hero.scss/girl2x.png');
+                        content: "";
+                        width: 303px;
+                        height: 241px;
+                        top: -71px;
+                        left: 645px;
+                        z-index: -1;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+        
+                    @media (-webkit-min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi) {
+        
+                        @media (min-width:768px) {
+                            position: absolute;
+                            background: url('../images/hero.scss/girl2x.png');
+                            content: "";
+                            width: 190px;
+                            height: 150px;
+                            top: -19px;
+                            left: 370px;
+                            z-index: -1;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
+        
+                        @media (min-width:1200px) {
+                            position: absolute;
+                            background: url('../images/hero.scss/girl2x.png');
+                            content: "";
+                            width: 303px;
+                            height: 241px;
+                            top: -71px;
+                            left: 645px;
+                            z-index: -1;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
+                    }
+        
+                }
+
+                         &::before {
+                
+                                    @media (min-width:768px) {
+                                        position: absolute;
+                                        background: url('../images/hero.scss/milk1x.png');
+                                        content: "";
+                                        width: 152px;
+                                        height: 154px;
+                                        top: -40px;
+                                        left: -150px;
+                                        z-index: -1;
+                                        background-repeat: no-repeat;
+                                    }
+                
+                                    @media (min-width:1200px) {
+                                        position: absolute;
+                                        background: url('../images/hero.scss/milk2x.png');
+                                        content: "";
+                                        width: 213px;
+                                        height: 216px;
+                                        top: -70px;
+                                        left: -214px;
+                                        z-index: -1;
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                    }
+                
+                                    @media (-webkit-min-device-pixel-ratio: 2),
+                                    (min-resolution: 192dpi) {
+                
+                                        @media (min-width:768px) {
+                                            position: absolute;
+                                            background: url('../images/hero.scss/milk2x.png');
+                                            content: "";
+                                            width: 152px;
+                                            height: 154px;
+                                            top: -40px;
+                                            left: -150px;
+                                            z-index: -1;
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                        }
+                
+                                        @media (min-width:1200px) {
+                                            position: absolute;
+                                            background: url('../images/hero.scss/milk2x.png');
+                                            content: "";
+                                            width: 213px;
+                                            height: 216px;
+                                            top: -70px;
+                                            left: -214px;
+                                            z-index: -1;
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                        }
+                
+                                    }
+                                }
         
 }
-
-.hero-text::after{
-
-    @media (min-width:768px) {
-            position: absolute;
-            background: url('../images/hero.scss/girl1x.png');
-            content: "";
-            width: 190px;
-            height: 150px;
-            top: -19px;
-            left: 370px;
-            z-index: -1;
-            background-repeat: no-repeat;
-    }
-
-    @media (min-width:1200px) {
-            position: absolute;
-            background: url('../images/hero.scss/girl2x.png');
-            content: "";
-            width: 303px;
-            height: 241px;
-            top: -71px;
-            left: 645px;
-            z-index: -1;
-            background-repeat: no-repeat;
-            background-size: contain;
-    }
-
-        @media (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi){
-
-            @media (min-width:768px) {
-                    position: absolute;
-                    background: url('../images/hero.scss/girl2x.png');
-                    content: "";
-                    width: 190px;
-                    height: 150px;
-                    top: -19px;
-                    left: 370px;
-                    z-index: -1;
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                }
-
-            @media (min-width:1200px) {
-                    position: absolute;
-                    background: url('../images/hero.scss/girl2x.png');
-                    content: "";
-                    width: 303px;
-                    height: 241px;
-                    top: -71px;
-                    left: 645px;
-                    z-index: -1;
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                }
-        }
-    
-}
-
-.hero-text::before{
-
-        @media (min-width:768px) {
-            position: absolute;
-            background: url('../images/hero.scss/milk1x.png');
-            content: "";
-            width: 152px;
-            height: 154px;
-            top: -40px;
-            left: -150px;
-            z-index: -1;
-            background-repeat: no-repeat;
-        }
-
-        @media (min-width:1200px) {
-            position: absolute;
-            background: url('../images/hero.scss/milk2x.png');
-            content: "";
-            width: 213px;
-            height: 216px;
-            top: -70px;
-            left: -214px;
-            z-index: -1;
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
-
-    @media (-webkit-min-device-pixel-ratio: 2),
-           (min-resolution: 192dpi){
-
-        @media (min-width:768px) {
-                position: absolute;
-                background: url('../images/hero.scss/milk2x.png');
-                content: "";
-                width: 152px;
-                height: 154px;
-                top: -40px;
-                left: -150px;
-                z-index: -1;
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-
-        @media (min-width:1200px) {
-                position: absolute;
-                background: url('../images/hero.scss/milk2x.png');
-                content: "";
-                width: 213px;
-                height: 216px;
-                top: -70px;
-                left: -214px;
-                z-index: -1;
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-
-    }
-}
-
 
 .text-button{
     display: none;
@@ -273,12 +273,8 @@
                 bottom: 0px;
                 left: 0;
                 z-index: -1;
-            }
-            
-    }
-
-
-        
+            }         
+    }       
 }
 
 .flex-conteiner{
@@ -295,7 +291,7 @@
             line-height: 1.25;
             text-align: right;
             color: var(--primary-white-color);
-    }
+        }
 
     @media (min-width:1200px) {
             display: flex;
@@ -308,8 +304,7 @@
             line-height: 1.28;
             text-align: right;
             color: var(--primary-white-color);
-    }
-    
+        }    
 }
 
 .upper{
@@ -320,34 +315,35 @@
             top: 156px;
             right: 25px;
             margin-bottom: 38px;
-    }
-    
-}
-
-.upper::after{
-    position: absolute;
-    right: -8px;
-    bottom: 30px;
-    z-index: -1;
-    content: "";
-    width: 16px;
-    height: 16px;
-    background-color: var(--primary-white-color);
-    border-radius: 50%;
-
-    @media (min-width:1200px) {
+        }
+        
+        &::after {
             position: absolute;
             right: -8px;
-            bottom: 50px;
+            bottom: 30px;
             z-index: -1;
             content: "";
-            width: 30px;
-            height: 30px;
+            width: 16px;
+            height: 16px;
             background-color: var(--primary-white-color);
-            border-radius: 50%;   
-        }
+            border-radius: 50%;
     
+        @media (min-width:1200px) {
+                position: absolute;
+                right: -8px;
+                bottom: 50px;
+                z-index: -1;
+                content: "";
+                width: 30px;
+                height: 30px;
+                background-color: var(--primary-white-color);
+                border-radius: 50%;
+            }
+    
+        }
 }
+
+
 
 .bottom{
     top: 151px;
@@ -357,31 +353,32 @@
             top: 247px;
             right: 25px;
     }
-}
 
-.bottom::after{
-    position: absolute;
-    right: -8px;
-    bottom: 30px;
-    z-index: -1;
-    content: "";
-    width: 16px;
-    height: 16px;
-    background-color: var(--primary-white-color);
-    border-radius: 50%;
-
-    @media (min-width:1200px) {
+        &::after {
             position: absolute;
             right: -8px;
-            bottom: 46px;
+            bottom: 30px;
             z-index: -1;
             content: "";
-            width: 30px;
-            height: 30px;
+            width: 16px;
+            height: 16px;
             background-color: var(--primary-white-color);
             border-radius: 50%;
+    
+        @media (min-width:1200px) {
+                position: absolute;
+                right: -8px;
+                bottom: 46px;
+                z-index: -1;
+                content: "";
+                width: 30px;
+                height: 30px;
+                background-color: var(--primary-white-color);
+                border-radius: 50%;
+            }
         }
 }
+
 
 .upper__number,
 .bottom__number{
@@ -393,9 +390,9 @@
     text-align: right;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #D41443;
+    color: var(--primary-title-color);
 
-    @media (min-width:1200px) {
+@media (min-width:1200px) {
         font-weight: 400;
         font-size: 46px;
         line-height: 1.15;
@@ -423,7 +420,7 @@
             letter-spacing: 0.04em;
             text-transform: uppercase;
             color: var(--primary-title-color);
-     } 
+        } 
      
      @media (min-width:1200px) {
             font-family: 'Titan One';
@@ -434,7 +431,7 @@
             letter-spacing: 0.04em;
             text-transform: uppercase;
             color: var(--primary-title-color);
-     }
+        }
 }
 
 
@@ -498,7 +495,7 @@
         @media (min-width:768px) {
                 width: 82.8px;
                 height: 24px;
-        }
+            }
 
         @media (min-width:1200px) {
                 width: 138px;
@@ -531,7 +528,5 @@
                 color: var(--primary-title-color);
             }
 
-        }
-
-        
+        }       
 }

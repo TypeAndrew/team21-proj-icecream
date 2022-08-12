@@ -13,96 +13,101 @@
     @media (min-width:1200px) {
       height: 664px;
     }
-  }
-  .header::after {
-    position: absolute;
-    width: 346px;
-    height: 344px;
-    left: 36px;
-    top: 83px;
-    background: #FFA5BA;
-    content: "";
-    border-radius: 50%;
-    z-index: -2;
-    overflow: hidden;
-    position: fixed;
-
-    @media (min-width:768px) {
+    
+        &::after {
+          position: absolute;
+          width: 346px;
+          height: 344px;
+          left: 36px;
+          top: 83px;
+          background: var(--secondary-title-color);
+          content: "";
+          border-radius: 50%;
+          z-index: -2;
+          overflow: hidden;
+          position: fixed;
+    
+          @media (min-width:768px) {
             position: absolute;
             width: 335px;
             height: 333px;
             left: 248px;
             top: 43px;
-        }
-
-        @media (min-width:1200px) {
+          }
+    
+          @media (min-width:1200px) {
             position: absolute;
             width: 534px;
             height: 534px;
             left: 517px;
             top: 54px;
+          }
+    
         }
 
+                &::before {
+                  position: absolute;
+                  background: url('../images/hero.scss/ice-cream1x.png');
+                  content: "";
+                  object-fit: contain;
+                  width: 171px;
+                  height: 410px;
+                  left: 117px;
+                  top: 92px;
+                  z-index: -1;
+                  background-repeat: no-repeat;
+        
+                  @media (min-width:768px) {
+                    left: 310px;
+                    top: 80px;
+                    width: 143px;
+                    height: 336px;
+                    object-fit: contain;
+                    background-size: contain;
+        
+                  }
+        
+                  @media (min-width:1200px) {
+                    width: 236px;
+                    height: 557px;
+                    left: 636px;
+                    top: 108px;
+                    background-size: contain;
+        
+                  }
+        
+                  @media (-webkit-min-device-pixel-ratio: 2),
+                  (min-resolution: 192dpi) {
+        
+                    @media (max-width:767px) {
+                      background: url('../images/hero.scss/ice-cream2x.png');
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      top: 100px;
+                    }
+        
+                    @media (min-width:768px) {
+                      background: url('../images/hero.scss/ice-cream2x.png');
+                      background-repeat: no-repeat;
+                      background-size: contain;
+        
+                    }
+        
+                    @media (min-width:1200px) {
+                      background: url('../images/hero.scss/ice-cream2x.png');
+                      background-repeat: no-repeat;
+                      background-size: contain;
+        
+                    }
+                  }
+        
+        
+                }
+
   }
-
-  .header::before{
-    position: absolute;
-    background: url('../images/hero.scss/ice-cream1x.png');
-    content: "";
-    object-fit: contain;
-    width: 171px;
-    height: 410px;
-    left: 117px;
-    top: 92px;
-    z-index: -1;
-    background-repeat: no-repeat;
-
-    @media (min-width:768px) {
-      left: 310px;
-      top: 80px;
-      width: 143px;
-      height: 336px;
-      object-fit: contain;
-      background-size: contain;
-      
-    }
-
-    @media (min-width:1200px) {
-      width: 236px;
-      height: 557px;
-      left: 636px;
-      top: 108px;
-      background-size: contain;
-      
-    }
-
-        @media (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi) {
-      
-          @media (max-width:767px) {
-            background: url('../images/hero.scss/ice-cream2x.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            top: 100px;
-          }
-
-          @media (min-width:768px) {
-            background: url('../images/hero.scss/ice-cream2x.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            
-          }
-
-          @media (min-width:1200px) {
-            background: url('../images/hero.scss/ice-cream2x.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            
-          }
-    }
+  
 
   
-  }
   
   .nav {
     display: flex;
