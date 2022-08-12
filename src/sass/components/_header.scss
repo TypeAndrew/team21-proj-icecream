@@ -1,10 +1,19 @@
 // Стили для хедера
+<<<<<<< Updated upstream
 .header {
   position: absolute;
   height: 502px;
   background-color: var(--hero-background-color);
   width: 100%;
 }
+=======
+  .header {
+    position: relative;
+    height: 502px;
+    background-color:var(--hero-background-color);
+    width: 100%;
+    z-index: -3;
+>>>>>>> Stashed changes
 
 .nav {
   display: flex;
