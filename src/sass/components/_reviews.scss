@@ -1,18 +1,20 @@
 .reviews {
     text-align: center;
 }
+
 .slider {
     position: relative;
     text-align: center;
 }
-.slider__item {
-    margin-bottom: 16px;
-}
+
+
 .slider__img {
- display: inline-block;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .reviews__bg {
+    display: inline-block;
     background-color: var(--background-color-reviews);
     padding: 30px 50px 17px;
     max-width: 968px;
@@ -21,13 +23,16 @@
     position: relative;
 
     @media screen and (min-width: 768px) {
+        max-width: 620px;
         padding: 20px 6px 36px 6px;
-        }
-    
-        @media screen and (min-width: 1200px) {
-            padding: 32px 74px 31px 72px;
-        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 968px;
+        padding: 32px 74px 31px 72px;
+    }
 }
+
 .reviews__thumb {
     display: inline-block;
     position: relative;
@@ -38,7 +43,16 @@
     background-image: url(/src/images/reviews-section/“.png);
     background-repeat: no-repeat;
 
+    @media screen and (min-width: 768px) {
+        padding: 17px 40px 8px 44px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 15px 35px 8px 37px;
+    }
+
 }
+
 .revies__text {
     display: inline-block;
     font-weight: 500;
@@ -48,18 +62,20 @@
     border-bottom: 1px solid #E1E1E1;
     color: var(--primary-text-color);
 
-    @media screen and (min-width: 768px) { 
+    @media screen and (min-width: 768px) {
         font-size: 14px;
+        line-height: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
         line-height: 1.88;
     }
-          @media screen and (min-width: 1200px) {
-              font-size: 16px;
-              line-height: 1.88;
-          }
 }
+
 .reviews__bg::after {
     display: block;
-    content: "" ;
+    content: "";
     position: absolute;
     bottom: -20px;
     left: 50%;
@@ -67,8 +83,9 @@
     transform: translateX(-50%);
     background-image: url(/src/images/reviews-section/3dots.png);
     width: 32px;
-    height: 4px;  
+    height: 4px;
 }
+
 .revies__user {
     margin-top: 36px;
     font-weight: 500;
@@ -76,25 +93,14 @@
     line-height: 2.58;
     text-align: center;
     color: var(--primary-text-color);
-    @media screen and (min-width: 768px) {
-            font-size: 14px;
-            line-height: 2.14;
-        }
-    
-        @media screen and (min-width: 768px) {
-            font-size: 20px;
-            line-height: 1.85;
-        }
-}
-.slider::after {
-    display: block;
-    position: absolute;
 
-    transform: translateX(-50%) translateY(-50%);
-    left: 50%;
-    bottom: -44px;
-    content: "";
-    background-image: url(/src/images/reviews-section/home_dots.png);
-    width: 72px;
-    height: 12px;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 2.14;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+        line-height: 1.85;
+    }
 }
