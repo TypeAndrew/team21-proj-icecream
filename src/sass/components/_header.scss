@@ -1,61 +1,109 @@
 
-.header {
-  position: relative;
-  height: 502px;
-  background-color:var(--hero-background-color);
-  width: 100%;
-  z-index: 1;
-}
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 8px;
-  @media screen and( min-width: 768px) and(max-width:1199px) {
-    padding-top: 32px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 37px;
-  }
-}
 
-.nav__burger-button {
-  background-color: transparent;
-  z-index: 1;
-  border: none;
-  @media screen and( min-width: 768px) and(max-width:1199px) {
-    margin-right: 32px;
-    margin-left: auto;
-  }
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
-}
-.order-button {
-  display: block;
-  margin: 60px auto 20px auto;
-  width: 209px;
-  height: 44px;
-  background: var(--primary-white-color);
-  border-radius: 22px;
-  border: none;
-  padding: 0 48px;
-  color: var(--primary-title-color);
-  @media screen and( min-width: 768px) and(max-width:1199px) {
-    width: 186px;
-  }
-}
+    @media (min-width:768px) {
+      height: 416px;
+    }
 
-.order-button--tablet {
-  margin: 0;
-  @media screen and (max-width: 767px) {
-    display: none;
+    @media (min-width:1200px) {
+      height: 664px;
+    }
+    
+        &::after {
+          position: absolute;
+          width: 346px;
+          height: 344px;
+          left: 36px;
+          top: 83px;
+          background: var(--secondary-title-color);
+          content: "";
+          border-radius: 50%;
+          z-index: -2;
+          overflow: hidden;
+          position: absolute;
+    
+          @media (min-width:768px) {
+            position: absolute;
+            width: 335px;
+            height: 333px;
+            left: 248px;
+            top: 43px;
+          }
+    
+          @media (min-width:1200px) {
+            position: absolute;
+            width: 534px;
+            height: 534px;
+            left: 517px;
+            top: 54px;
+          }
+    
+        }
+
+                &::before {
+                  position: absolute;
+                  background: url('../images/hero.scss/ice-cream1x.png');
+                  content: "";
+                  object-fit: contain;
+                  width: 171px;
+                  height: 410px;
+                  left: 117px;
+                  top: 92px;
+                  z-index: -1;
+                  background-repeat: no-repeat;
+        
+                  @media (min-width:768px) {
+                    left: 310px;
+                    top: 80px;
+                    width: 143px;
+                    height: 336px;
+                    object-fit: contain;
+                    background-size: contain;
+        
+                  }
+        
+                  @media (min-width:1200px) {
+                    width: 236px;
+                    height: 557px;
+                    left: 636px;
+                    top: 108px;
+                    background-size: contain;
+        
+                  }
+        
+                  @media (-webkit-min-device-pixel-ratio: 2),
+                  (min-resolution: 192dpi) {
+        
+                    @media (max-width:767px) {
+                      background: url('../images/hero.scss/ice-cream2x.png');
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      top: 100px;
+                    }
+        
+                    @media (min-width:768px) {
+                      background: url('../images/hero.scss/ice-cream2x.png');
+                      background-repeat: no-repeat;
+                      background-size: contain;
+        
+                    }
+        
+                    @media (min-width:1200px) {
+                      background: url('../images/hero.scss/ice-cream2x.png');
+                      background-repeat: no-repeat;
+                      background-size: contain;
+        
+                    }
+                  }
+        
+        
+                }
+
   }
-}
-.nav__list {
-  margin-top: 135px;
-  @media screen and (min-width: 1200px) {
-    margin: 0;
+  
+
+  
+  
+  .nav {
     display: flex;
     align-items: center;
   }
