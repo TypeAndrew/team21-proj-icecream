@@ -1,10 +1,10 @@
 
 .header {
-    position: absolute;
+    position: relative;
     height: 502px;
     background-color:var(--hero-background-color);
     width: 100%;
-    z-index: -3;
+    
 
     @media (min-width:768px) {
       height: 416px;
@@ -23,7 +23,7 @@
           background: var(--secondary-title-color);
           content: "";
           border-radius: 50%;
-          z-index: -2;
+          z-index: 30;
           overflow: hidden;
           position: absolute;
     
@@ -54,7 +54,7 @@
                   height: 410px;
                   left: 117px;
                   top: 92px;
-                  z-index: -1;
+                  z-index: 40;
                   background-repeat: no-repeat;
         
                   @media (min-width:768px) {
