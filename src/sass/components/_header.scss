@@ -1,4 +1,10 @@
 
+.header {
+    position: absolute;
+    height: 502px;
+    background-color:var(--hero-background-color);
+    width: 100%;
+    z-index: -3;
 
     @media (min-width:768px) {
       height: 416px;
