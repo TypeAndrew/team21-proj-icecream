@@ -1,1 +1,199 @@
 // Cтили для секции контактов 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.contacts-section {
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    @media (min-width: 768px) {
+        padding-top: 80px;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 120px 0;
+    }
+
+    background-image: linear-gradient(to bottom,
+        var(--primary-white-color) 24%,
+        var(--background-color) 24%);
+
+    @media (min-width: 768px) {
+        background-image: linear-gradient(to bottom,
+                var(--primary-white-color) 48%,
+                var(--background-color) 48%);
+    }
+
+    @media (min-width: 1200px) {
+        background-image: linear-gradient(to bottom,
+                var(--primary-white-color) 26%,
+                var(--background-color) 26%);
+    }
+
+    &__cart-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 22px;
+
+        @media (min-width:768px) {
+            flex-direction: row;
+        }
+    }
+
+    &__item {
+        width: 280px;
+        padding: 40px 32px;
+        background-color: var(--primary-white-color);
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+
+        @media (min-width: 768px) {
+            width: 224px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 368px;
+            padding: 40px;
+        }
+    }
+
+    &__item+&__item {
+        margin-top: 20px;
+
+        @media (min-width:768px) {
+            margin-top: 0;
+            margin-left: 32px;
+        }
+    }
+
+    &__text {
+        padding-bottom: 24px;
+        border-bottom: 1px solid #E1E1E1;
+    }
+
+    &__place {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 80px;
+        height: 16px;
+        text-transform: uppercase;
+        color: var(--primary-white-color);
+        background-color: #F0D1A5;
+        border-radius: 4px;
+    }
+
+    &__place--accent {
+        width: 130px;
+        background-color: #C2E297;
+    }
+
+    &__subtitle {
+        color: var(--primary-text-color);
+    }
+
+    &__text-item {
+        margin-top: 8px;
+        line-height: 18px;
+        color: var(--secondary-text-color);
+    }
+
+    &__schedule {
+        padding: 24px 0;
+        border-bottom: 1px solid #E1E1E1;
+    }
+
+    &__time-information {
+        margin-bottom: 8px;
+        color: var(--secondary-title-color);
+    }
+
+    &__contacts {
+        padding-top: 24px;
+        line-height: 18px;
+    }
+
+    &__contact {
+        display: block;
+        color: var(--secondary-text-color);
+
+        &:hover,
+        &:focus {
+            color: var(--primary-title-color);
+        }
+
+    }
+
+    &__btn-list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 32px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+
+        @media (min-width:768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 60px;
+        }
+    }
+
+    &__btn {
+        height: 44px;
+        border: none;
+
+        &--one {
+            padding: 0 17px;
+            margin-bottom: 10px;
+            color: var(--primary-white-color);
+            background: #D41342;
+            border-radius: 22px;
+
+            @media (min-width:768px) {
+                margin-bottom: 0;
+                margin-right: 14px;
+                padding: 0 30px;
+            }
+        }
+
+        &--two {
+            padding: 0 32px;
+            color: var(--primary-title-color);
+            background: var(--primary-white-color);
+            border-radius: 22px;
+
+            @media (min-width:768px) {
+                padding: 0 37px;
+            }
+        }
+    }
+
+    &__icon--one {
+        width: 8px;
+        height: 10px;
+    }
+
+    &__icon--two {
+        width: 7px;
+        height: 10px;
+    }
+}
