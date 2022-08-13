@@ -305,8 +305,8 @@
     top: -4px;
     right: 8px;
   @media (min-width: 1200px) {
-    top: 156px;
-    right: 25px;
+    top: -8px;
+    right: 15px;
     margin-bottom: 38px;
   }
 
@@ -340,9 +340,9 @@
     right: 8px;
 
   @media (min-width: 1200px) {
-    top: 247px;
-    right: 25px;
-  }
+    top: 76px;
+    right: 15px;
+}
 
   &::after {
     position: absolute;

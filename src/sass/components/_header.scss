@@ -206,6 +206,7 @@
     top: 20px;
   }
   @media screen and (min-width: 1200px) {
+    z-index: 400;
   }
 }
 .mobal-menu.is-open {
@@ -242,6 +243,7 @@
 .nav__list {
   @media screen and (min-width: 1200px) {
     display: flex;
+    
   }
   @media screen and (max-width: 1199px) {
     margin-top: 136px;
