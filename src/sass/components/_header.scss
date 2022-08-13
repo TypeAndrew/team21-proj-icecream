@@ -25,7 +25,7 @@
           border-radius: 50%;
           z-index: -2;
           overflow: hidden;
-          position: fixed;
+          position: absolute;
     
           @media (min-width:768px) {
             position: absolute;
