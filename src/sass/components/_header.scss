@@ -120,8 +120,13 @@ justify-content: space-between;
     @media screen and(min-width: 768px) and(max-width:1199px) {
      padding-top: 32px; 
     }
+    @media screen and (min-width:1200px) {
+      padding-top: 40px;
+    }
   }
-
+.nav__list{
+  display: flex;
+}
   .nav__burger-button {
     background-color: transparent;
     z-index: 1;
@@ -130,6 +135,10 @@ justify-content: space-between;
       margin-right: 32px; 
       margin-left: auto;
       z-index: 200;
+     }
+     @media screen and(min-width:1200px) {
+      display: none;
+      
      }
   }
   .order-button {
