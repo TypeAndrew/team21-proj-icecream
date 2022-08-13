@@ -1,0 +1,68 @@
+/* Слайдер */
+.slick-slider{
+	position: relative;
+		display: block;
+		box-sizing: border-box;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		touch-action: pan-y;
+		-webkit-tap-highlight-color: transparent;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	position: relative;
+		overflow: hidden;
+		display: block;
+		margin: 0;
+		padding: 0;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+/* Конкретный слайдер */
+/* .slider {
+	position: relative;
+	padding: 0px 30px;
+} */
+
+.slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0px 9px;
+}
+.slider .slick-dots button{
+	font-size: 0;
+	background-image: url(/src/images/reviews-section/dot.svg);
+	width: 12px;
+	height: 12px;
+	border: transparent;
+	border-radius: 50%;
+	
+}
+
+.slider .slick-dots li.slick-active button{
+	background-image: url(/src/images/reviews-section/home.svg);
+	width: 13px;
+	height: 12px;
+	border-radius: 0;
+	background-color: transparent;
+}
+
+
+.slider__item {
+	padding: 0px 15px;
+}
+.slider__item img{
+	max-width: 100%;
+}
+
