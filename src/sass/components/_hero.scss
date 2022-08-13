@@ -1,1 +1,307 @@
-// Стили для героя
+.tagline {
+        @media(max-width: 767px) {
+                margin-top: 139px;
+                font-family: 'Titan One';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 26px;
+                line-height: 1.15;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: var(--primary-white-color);
+    } 
+         @media(min-width:768px) {
+                margin-top: 20px;
+                font-family: 'Titan One';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 1.13;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: var(--primary-white-color);
+          }
+
+          @media (min-width:1200px) {
+                margin-top: 20px;
+                margin-left: 0;
+                font-family: 'Titan One';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 38px;
+                line-height: 1.15;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: var(--primary-white-color);
+          }
+}
+
+.girl{
+    display: none;
+
+    @media (min-width:768px) {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    
+    @media (min-width:1200px) {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 304px;
+        height: 241px;
+    }
+}
+
+.milk{
+    display: none;
+
+    @media (min-width:768px) {
+        display: block;
+        position: absolute;
+        left: 32px;
+        bottom: 16px;
+    }
+}
+
+.hero-text{
+    display: none;
+
+    @media (min-width:768px) {
+            display: inline-block;
+            position: absolute;
+            left: 184px;
+            bottom: 81px;
+            width: 114px;
+            height: auto;
+            position: absolute;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 1.5;
+            color: var(--primary-white-color);
+    }
+        
+}
+
+.text-button{
+    display: none;
+
+    @media (min-width:768px) {
+            display: block;
+            position: absolute;
+            left: 184px;
+            bottom: 56px;
+            width: 18px;
+            height: 18px;
+            background-color: var(--primary-white-color);
+            border: transparent;
+            border-radius: 50%;
+    }
+        
+}
+
+.flex-conteiner{
+   display: none;
+
+    @media (min-width:768px) {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 1.25;
+            text-align: right;
+            color: var(--primary-white-color);
+    }
+    
+}
+
+.upper{
+    top: 94px;
+    right: 40px;
+    
+}
+
+.upper::after{
+    position: absolute;
+    right: -8px;
+    bottom: 30px;
+    z-index: -1;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-white-color);
+    border-radius: 50%;
+    
+}
+
+.bottom{
+    top: 151px;
+    right: 40px;
+}
+
+.bottom::after{
+    position: absolute;
+    right: -8px;
+    bottom: 30px;
+    z-index: -1;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-white-color);
+    border-radius: 50%;
+}
+
+.upper__number,
+.bottom__number{
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.14;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+}
+
+.tagline-passion {
+    @media(max-width: 767px) {
+            font-family: 'Titan One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 96.5%;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--primary-title-color);
+        }
+
+     @media (min-width:768px) {
+            font-family: 'Titan One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 0.91;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--primary-title-color);
+     } 
+     
+     @media (min-width:1200px) {
+            font-family: 'Titan One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 58px;
+            line-height: 0.90;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--primary-title-color);
+     }
+}
+
+
+.button-product{
+    width: 62.4px;
+    height: 24px;
+    margin-top: 20px;
+    margin-right: 8px;
+    margin-left: 8px;
+    background: var(--primary-title-color);
+    border-radius: 20px;
+    border: transparent;
+
+        @media (min-width:768px) {
+            margin-left: 0;
+            width: 62.4px;
+            height: 24px;
+        }
+
+        @media (min-width:1200px) {
+            margin-left: 0;
+            width: 107px;
+            height: 40px;
+        }
+
+    &__text--white {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            font-family: 'DM Sans, sans serif';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 10px;
+            color: var(--primary-white-color);
+
+            @media (min-width:1200px) {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.28;
+                color: var(--primary-white-color);
+            }
+        }
+}
+
+.button-how-its-made{
+        width: 82.8px;
+        height: 24px;
+        margin-top: 20px;
+        background: var(--primary-white-color);
+        border-radius: 20px;
+        border: transparent;
+
+        @media (min-width:768px) {
+                width: 82.8px;
+                height: 24px;
+        }
+
+        @media (min-width:1200px) {
+                width: 138px;
+                height: 40px;
+            }
+
+        &__text--pink{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            z-index: 1;
+            justify-content: center;
+            font-family: 'DM Sans, sans serif';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 10px;
+            color: var(--primary-title-color);
+
+        @media (min-width:1200px) {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.28;
+                color: var(--primary-title-color);
+            }
+
+        }
+
+        
+}
