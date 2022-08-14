@@ -139,11 +139,17 @@
   border-color: transparent;
   padding: 0 48px;
   color: var(--primary-title-color);
+  cursor: pointer;
 
   @media screen and( min-width: 768px) and(max-width:1199px) {
     width: 160px;
     height: 44px;
     padding: 0 37px;
+  }
+
+  @media  screen and(min-width:1200px) {
+    width: 159px;
+    height: 44px;
   }
 }
 
