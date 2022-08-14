@@ -224,6 +224,7 @@
 
 .text-button {
   display: none;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     display: block;
@@ -304,6 +305,7 @@
 .upper {
     top: -4px;
     right: 8px;
+
   @media (min-width: 1200px) {
     top: -8px;
     right: 15px;
@@ -380,11 +382,13 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--primary-title-color);
+  z-index: 20;
 
   @media (min-width: 1200px) {
     font-weight: 400;
     font-size: 46px;
     line-height: 1.15;
+    z-index: 20;
   }
 }
 
@@ -432,6 +436,7 @@
   background: var(--primary-title-color);
   border-radius: 20px;
   border: transparent;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     margin-left: 0;
@@ -476,7 +481,7 @@
   font-weight: 400;
   font-size: 8px;
   line-height: 10px;
- 
+  cursor: pointer;
   color: #d41443;
   width: 82.8px;
   height: 24px;
