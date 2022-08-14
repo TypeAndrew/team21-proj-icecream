@@ -129,6 +129,13 @@
     display: none;
   }
 }
+
+.order-button:hover{
+  background-color: #ecebeb;
+}
+.order-button:focus{
+  background-color: #ecebeb;
+}
 .order-button {
   display: block;
   margin: 60px auto 20px auto;
@@ -146,6 +153,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
+  
   @media screen and( min-width: 768px) and(max-width:1199px) {
     width: 160px;
     height: 44px;
@@ -227,6 +235,7 @@
   & .order-button {
     position: relative;
     top: 20px;
+
   }
   @media screen and (min-width: 1200px) {
     z-index: 400;
