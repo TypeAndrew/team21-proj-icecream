@@ -1,8 +1,6 @@
 // Cтили для секции с галереей 
 
-.container {
-    position: relative;
-}
+
 
 .gallery {
 
@@ -11,16 +9,17 @@
         &__conteiner-union {
             //margin-bottom: 60px;
             height: 236px;
-            transform: translate(10%, -25%);
+            transform: translate(0%, -20%);
                 ;
             
                 @media screen and (min-width:250px) and (max-width:767px) {
                     height: 136px;
-            
+                   
                 }
             
                 @media screen and (min-width:768px) and (max-width:1199px) {
                     height: 326px;
+                    
             
                 }
             
@@ -32,6 +31,13 @@
     
         }
        
+        .container {
+            @media screen and  (max-width:1199px) {
+                padding-left: 0;
+                padding-right: 0;
+                }
+
+        }
 
         &__grid {
             position: absolute;
