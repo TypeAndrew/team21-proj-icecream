@@ -104,12 +104,11 @@
     line-height: 140%;
     width: 200px;
     height: auto;
-    
+
     margin-bottom: 20px;
     bottom: -180px;
     left: 215px;
-}
-  
+  }
 
   &::after {
     @media (min-width: 768px) {
@@ -119,7 +118,7 @@
       width: 190px;
       height: 150px;
       top: -12px;
-      left: 335px;
+      left: 366px;
       z-index: 18;
       background-repeat: no-repeat;
     }
@@ -130,7 +129,7 @@
       content: '';
       width: 303px;
       height: 241px;
-      top: -37px;
+      top: -35px;
       left: 649px;
       z-index: 18;
       background-repeat: no-repeat;
@@ -260,9 +259,7 @@
     height: 26px;
     bottom: -201px;
     left: 216px;
-
-
-
+    
     &::after {
       position: absolute;
       background: url('../images/hero.scss/arrow-right_26x26.svg');
@@ -312,8 +309,8 @@
 }
 
 .upper {
-    top: -4px;
-    right: 8px;
+  top: -4px;
+  right: 8px;
 
   @media (min-width: 1200px) {
     top: -8px;
@@ -347,13 +344,13 @@
 }
 
 .bottom {
-    top: 63px;
-    right: 8px;
+  top: 63px;
+  right: 8px;
 
   @media (min-width: 1200px) {
     top: 76px;
     right: 15px;
-}
+  }
 
   &::after {
     position: absolute;
