@@ -140,20 +140,24 @@
   padding: 0 48px;
   color: var(--primary-title-color);
   cursor: pointer;
-
+  fill: transparent;
+  font-size: 16px;
+  line-height: 21px;
   @media screen and( min-width: 768px) and(max-width:1199px) {
     width: 160px;
     height: 44px;
-    padding: 0 37px;
+    padding: 0 38px;
   }
 
-  @media  screen and(min-width:1200px) {
+  @media screen and(min-width:1200px) {
     width: 159px;
     height: 44px;
+    padding: 0 37px;
   }
 }
 
 .order-button--tablet {
+ 
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -192,6 +196,18 @@
     color: var(--primary-title-color);
   }
 }
+.Nav__button-text{
+  @media screen and(max-width:767px) {
+    margin-right: 16px ;
+}
+@media screen and (min-width:768px) and ( max-width:1199px) {
+  margin-right: 6px ;  
+}
+@media screen and (min-width: 1200px) {
+  margin-right: 7px ;
+}
+}
+
 
 .mobal-menu {
   @media screen and (max-width: 1199px) {
@@ -223,10 +239,11 @@
   display: block;
   position: fixed;
   top: 60px;
-  right: 32px;
+  right: 20px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 186px;
     height: 44px;
+    right: 34px;
   }
 }
 .nav__burger-button .nav__icon-close {
@@ -249,7 +266,6 @@
 .nav__list {
   @media screen and (min-width: 1200px) {
     display: flex;
-    
   }
   @media screen and (max-width: 1199px) {
     margin-top: 136px;
