@@ -228,7 +228,6 @@
   @media (min-width: 768px) {
     display: block;
     position: absolute;
-
     bottom: -130px;
     left: 156px;
     width: 18px;
@@ -237,6 +236,7 @@
     border: transparent;
     border-radius: 50%;
 
+
     &::after {
       position: absolute;
       background: url('../images/hero.scss/arrow-right_18x18.svg');
@@ -244,9 +244,13 @@
       width: 18px;
       height: 18px;
       background-repeat: no-repeat;
-      bottom: 0px;
-      left: 0;
+      bottom: -1px;
+      left: -1;
       z-index: 18;
+
+      &:hover {
+          border: 3px solid var(--primary-title-color);
+        }
     }
   }
 
@@ -255,7 +259,7 @@
     height: 26px;
     bottom: -201px;
     left: 216px;
-
+    
     &::after {
       position: absolute;
       background: url('../images/hero.scss/arrow-right_26x26.svg');
@@ -266,6 +270,10 @@
       bottom: 0px;
       left: 0;
       z-index: 18;
+
+      &:hover {
+          border: 3px solid var(--primary-title-color);
+        }
     }
   }
 }
@@ -436,6 +444,11 @@
   border: transparent;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+      border: 1px solid var(--primary-white-color);
+    }
+
   @media (min-width: 768px) {
     margin-left: 0;
     width: 62.4px;
@@ -487,6 +500,11 @@
   background: var(--primary-white-color);
   border-radius: 20px;
   border: transparent;
+
+  &:hover,
+  &:focus {
+      border: 1px solid var(--primary-title-color);
+    }
 
   @media (min-width: 768px) {
     width: 82.8px;
