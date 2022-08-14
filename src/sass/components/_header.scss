@@ -141,23 +141,25 @@
   color: var(--primary-title-color);
   cursor: pointer;
   fill: transparent;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   @media screen and( min-width: 768px) and(max-width:1199px) {
     width: 160px;
     height: 44px;
-    padding: 0 38px;
+    padding: 0 37px;
   }
 
   @media screen and(min-width:1200px) {
     width: 159px;
     height: 44px;
-    padding: 0 37px;
+    padding: 0 36px;
   }
 }
 
 .order-button--tablet {
- 
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -196,18 +198,17 @@
     color: var(--primary-title-color);
   }
 }
-.Nav__button-text{
+.nav__button-text {
   @media screen and(max-width:767px) {
-    margin-right: 16px ;
+    margin-right: 16px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 6px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 7px;
+  }
 }
-@media screen and (min-width:768px) and ( max-width:1199px) {
-  margin-right: 6px ;  
-}
-@media screen and (min-width: 1200px) {
-  margin-right: 7px ;
-}
-}
-
 
 .mobal-menu {
   @media screen and (max-width: 1199px) {
@@ -240,10 +241,17 @@
   position: fixed;
   top: 60px;
   right: 20px;
+  font-family: 'DM Sans';
+
+  font-weight: 700;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+
     width: 186px;
     height: 44px;
     right: 34px;
+    & .nav__button-text{
+      margin-right: 22px ;
+    }
   }
 }
 .nav__burger-button .nav__icon-close {
