@@ -104,12 +104,11 @@
     line-height: 140%;
     width: 200px;
     height: auto;
-    
+
     margin-bottom: 20px;
     bottom: -180px;
     left: 215px;
-}
-  
+  }
 
   &::after {
     @media (min-width: 768px) {
@@ -119,7 +118,7 @@
       width: 190px;
       height: 150px;
       top: -12px;
-      left: 335px;
+      left: 366px;
       z-index: 18;
       background-repeat: no-repeat;
     }
@@ -229,7 +228,7 @@
   @media (min-width: 768px) {
     display: block;
     position: absolute;
-   
+
     bottom: -130px;
     left: 156px;
     width: 18px;
@@ -256,7 +255,6 @@
     height: 26px;
     bottom: -201px;
     left: 216px;
-
 
     &::after {
       position: absolute;
@@ -303,8 +301,8 @@
 }
 
 .upper {
-    top: -4px;
-    right: 8px;
+  top: -4px;
+  right: 8px;
 
   @media (min-width: 1200px) {
     top: -8px;
@@ -338,13 +336,13 @@
 }
 
 .bottom {
-    top: 63px;
-    right: 8px;
+  top: 63px;
+  right: 8px;
 
   @media (min-width: 1200px) {
     top: 76px;
     right: 15px;
-}
+  }
 
   &::after {
     position: absolute;
