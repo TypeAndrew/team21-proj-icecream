@@ -184,6 +184,9 @@
             @media (min-width:768px) {
                 padding: 0 37px;
             }
+            &:hover, &:focus {
+                background-color: #ecebeb;
+            }
         }
     }
 
