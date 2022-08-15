@@ -341,19 +341,19 @@
 }
 
 .products__desc {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     width: 100%;
     height: 100%;
+    padding: 15px;
 
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
-
-    padding-bottom: 32px;
-    padding-top: 70px;
 
     text-align: center;
     letter-spacing: 0.04em;
@@ -364,7 +364,6 @@
     }
 
     @media screen and (min-width: 1200px) {
-        padding-bottom: 60px;
         font-size: 16px;
     }
 }
