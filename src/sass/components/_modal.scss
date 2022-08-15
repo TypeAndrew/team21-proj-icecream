@@ -96,6 +96,9 @@
 .product__thumb--img {
     margin: auto;
 }
+.product__thumb--img:hover {
+    transform: translateX(0) scale(3.5);
+}
 .product__thumb--name {
     font-size: 13px;
     font-weight: 500;
