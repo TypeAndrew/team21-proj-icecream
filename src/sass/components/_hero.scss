@@ -249,7 +249,7 @@
       z-index: 18;
 
       &:hover {
-          border: 3px solid var(--primary-title-color);
+          box-shadow: 1px 1px 44px 34px rgba(236, 235, 235, 1);
         }
     }
   }
@@ -272,7 +272,7 @@
       z-index: 18;
 
       &:hover {
-          border: 3px solid var(--primary-title-color);
+          box-shadow: 1px 1px 44px 34px rgba(236, 235, 235, 1);
         }
     }
   }
