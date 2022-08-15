@@ -323,13 +323,16 @@
     background-color: var(--hero-background-color);
     transform: rotateY(180deg);
     border-radius: 24px;
+    box-shadow: 0px 0px 13px var(--primary-title-color);
 
     &--coffee {
         background: var(--product-coffee-color);
+        box-shadow: 0px 0px 13px #af803e;
     }
 
     &--milk {
         background: var(--product-milk-color);
+        box-shadow: 0px 0px 13px #879d6b;
     }
 }
 
