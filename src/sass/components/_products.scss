@@ -304,51 +304,67 @@
     height: 100%;
 }
 
-// .products__thumb {
-//     overflow: hidden;
-//     position: relative;
-// }
+.products__thumb {
+    position: relative;
+    perspective: 1000px;
+}
 
-// .products__back {
-//     width: 100%;
-//     height: 100%;
-    
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     transform: translateY(100%);
-//     transition-property: transform;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
+.products__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 1s;
+    backface-visibility: hidden;
+}
 
-// .products__desc {
-//     width: 100%;
-//     height: 100%;
+.products__back {
+    background-color: var(--hero-background-color);
+    transform: rotateY(180deg);
+    border-radius: 24px;
+    box-shadow: 0px 0px 13px var(--primary-title-color);
 
-//     font-family: 'DM Sans';
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 1.52;
+    &--coffee {
+        background: var(--product-coffee-color);
+        box-shadow: 0px 0px 13px #af803e;
+    }
 
-//     padding-bottom: 32px;
-//     padding-top: 70px;
-    
-//     text-align: center;
-//     letter-spacing: 0.04em;
-//     color: var(--primary-white-color);
+    &--milk {
+        background: var(--product-milk-color);
+        box-shadow: 0px 0px 13px #879d6b;
+    }
+}
 
-//     @media screen and (min-width: 768px) {
-//         line-height: 1.76;
-//     }
+.products__thumb:hover .products__back {
+    transform: rotateY(360deg);
+}
 
-//     @media screen and (min-width: 1200px) {
-//         padding-bottom: 60px;
-//         font-size: 16px;
-//     }
-// }
+.products__desc {
+    display: inline-block;
 
-// .products__button:hover .products__back {
-//     transform: translateY(0);
-// }
+    width: 100%;
+    height: 100%;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+
+    padding-bottom: 32px;
+    padding-top: 70px;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--primary-white-color);
+
+    @media screen and (min-width: 768px) {
+        line-height: 1.76;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 60px;
+        font-size: 16px;
+    }
+}
