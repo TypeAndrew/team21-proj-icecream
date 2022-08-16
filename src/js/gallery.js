@@ -1,4 +1,4 @@
-import Masonry from "masonry-layout";
+/*import Masonry from "masonry-layout";
 
 
 window.onload = () => {
@@ -38,6 +38,6 @@ function onMouseleaveCardHandler(evt) {
   const cardItem = this.querySelector('.gallery__grid-img');
 
   cardItem.style.transform = '';
-}
+}*/
 
   
