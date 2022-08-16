@@ -118,6 +118,7 @@
 
 .nav__burger-button {
   background-color: transparent;
+  cursor: pointer;
   z-index: 1;
   border: none;
   @media screen and( min-width: 768px) and(max-width:1199px) {
