@@ -58,13 +58,16 @@
         }
     
         &__grid-item:hover {
-            transform: rotate(1turn) scale(1.4);
+            transform: rotate(1turn) scale(1.2);
+        }
+
+        &__grid-img:hover {
+            transform: rotate(1turn) scale(1.2);
         }
         
         &__grid-item {
             
-            top: auto;
-            left: auto;
+        
             transition: transform 850ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         // modifiers
