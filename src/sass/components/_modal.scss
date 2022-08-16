@@ -34,13 +34,16 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 20px;
-    width: calc(100vw - 80px);
+    padding: 40px;
+    width: calc(100vw - 40px);
+    max-height: 700px;
+    height: 100%;
     background-color: var(--secondary-title-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 24px;
+    overflow-y: auto;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 520px) {
             width: 500px;
         }
 }
@@ -50,7 +53,7 @@
 
     position: absolute;
     top: 8px;
-    right: 8px;
+    right: 19px;
 
     display: flex;
     justify-content: center;
@@ -243,6 +246,9 @@
     border-radius: 20px;
     border: transparent;
     color: var(--primary-white-color);
-    transition: box-shadow .35s cubic-bezier(.4, 0, .2, 1);
     cursor: pointer;
+}
+.form__btn-submit:hover,
+.form__btn-submit:focus {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
