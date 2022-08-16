@@ -296,6 +296,7 @@
 
     &:hover {
         border: 1px solid var(--primary-title-color);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 }
 
@@ -317,9 +318,7 @@
     top: 0;
     transition: 1s;
     backface-visibility: hidden;
-}
 
-.products__back {
     background-color: var(--hero-background-color);
     transform: rotateY(180deg);
     border-radius: 24px;
