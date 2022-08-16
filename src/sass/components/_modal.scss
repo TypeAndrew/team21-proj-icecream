@@ -163,7 +163,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     position: absolute;
-    bottom: 12px;
+    bottom:9px;
     left: 11px;
     fill: var(--secondary-title-color);
 }
@@ -244,5 +244,6 @@
     border-radius: 20px;
     border: transparent;
     color: var(--primary-white-color);
+    transition: box-shadow .35s cubic-bezier(.4, 0, .2, 1);
     cursor: pointer;
 }
