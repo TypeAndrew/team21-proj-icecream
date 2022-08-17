@@ -449,6 +449,11 @@
 }
 
 .button-product {
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+
+
   width: 62.4px;
   height: 24px;
   margin-top: 20px;
@@ -512,6 +517,10 @@
 }
 
 .button-how-its-made {
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+
   font-weight: 400;
   font-size: 8px;
   line-height: 10px;
