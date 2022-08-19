@@ -168,7 +168,7 @@
     
                 @media screen and (min-width:160px) {
                     content: "";
-                    background-image: url('../images/gallery/mobile/home-pic#{$i}.png');
+                    background-image: url('../images/gallery/mobile/home-pic#{$i}.jpg');
                     background-size: cover;
                     width: 44px;
                     height: 44px;
@@ -181,7 +181,7 @@
                     @media screen and (min-width:1200px) and (min-device-pixel-ratio: 2),
                     (min-resolution: 192dpi),
                     (min-resolution: 2dppx) {
-                        background-image: url('../images/gallery/desktop/home-pic#{$i}@2x.png');
+                        background-image: url('../images/gallery/desktop/home-pic#{$i}@2x.jpg');
                         background-size: cover;
     
                     }
@@ -190,7 +190,7 @@
     
                 @media screen and (min-width:768px) and (max-width:1199px) {
                     content: "";
-                    background-image: url('../images/gallery/tablet/home-pic#{$i}.png');
+                    background-image: url('../images/gallery/tablet/home-pic#{$i}.jpg');
                     background-size: cover;
                     width: 104px;
                     height: 104px;
@@ -203,7 +203,7 @@
                     @media screen and (min-device-pixel-ratio: 2),
                     (min-resolution: 192dpi),
                     (min-resolution: 2dppx) {
-                        background-image: url('../images/gallery/tablet/home-pic#{$i}@2x.png');
+                        background-image: url('../images/gallery/tablet/home-pic#{$i}@2x.jpg');
                         background-size: cover;
     
                     }
@@ -211,7 +211,7 @@
     
                 @media screen and (min-width:1200px) {
                     content: "";
-                    background-image: url('../images/gallery/desktop/home-pic#{$i}.png');
+                    background-image: url('../images/gallery/desktop/home-pic#{$i}.jpg');
                     background-size: cover;
                     width: 138px;
                     height: 138px;
@@ -224,7 +224,7 @@
                     @media screen and (min-width:1200px) and (min-device-pixel-ratio: 2),
                     (min-resolution: 192dpi),
                     (min-resolution: 2dppx) {
-                        background-image: url('../images/gallery/desktop/home-pic#{$i}@2x.png');
+                        background-image: url('../images/gallery/desktop/home-pic#{$i}@2x.jpg');
                         background-size: cover;
     
                     }
