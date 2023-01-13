@@ -1,0 +1,2 @@
+!function(){var o={openAboutModalBtn:document.querySelector("[data-modal-about-open]"),closeAboutModalBtn:document.querySelector("[data-modal-about-close]"),modal:document.querySelector("[data-modal-about]")};function t(){o.modal.classList.toggle("is-hidden")}o.openAboutModalBtn.addEventListener("click",t),o.closeAboutModalBtn.addEventListener("click",t)}();
+//# sourceMappingURL=index.90edbec1.js.map
